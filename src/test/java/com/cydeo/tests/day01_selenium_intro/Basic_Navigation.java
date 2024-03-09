@@ -1,12 +1,11 @@
 package com.cydeo.tests.day01_selenium_intro;
 
-import io.github.bonigarcia.wdm.WebDriverManager;
 import org.openqa.selenium.chrome.ChromeDriver;
 
 public class Basic_Navigation {
     public static void main(String[]args) throws InterruptedException {
         //1: setup
-        WebDriverManager.chromedriver().setup();
+       // WebDriverManager.chromedriver().setup();
         //2: create instance of chrome browser
         ChromeDriver driver=new ChromeDriver();
         //driver.manage().window().fullscreen();// its only for mac
@@ -37,3 +36,8 @@ public class Basic_Navigation {
 
     }
 }
+/* /*<dependency>
+            <groupId>io.github.bonigarcia</groupId>
+            <artifactId>webdrivermanager</artifactId>
+            <version>5.5.3</version>
+        </dependency>*///its for selenium webdriver manager setup we have to use
